@@ -1,17 +1,23 @@
 const Footer = () => {
-    return(
-  <div className="bg-orange-500 py-10">
-    <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <span className="text-3xl text-white font-bold tracking-tight">
+  return (
+    <div className="bg-orange-500 py-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center">
+        <div className="text-center md:text-left">
+          <span className="text-3xl text-white font-bold tracking-tight">
             Foodel.com
+          </span>
+          <br/>
+          <span className="text-1xl text-white font-bold tracking-tight">
+            Made By Siddarth Koul
+          </span>
+        </div>
+        <span className="text-white font-bold tracking-tight flex gap-4">
+          <span>Privacy Policy</span>
+          <span>Terms of Service</span>
         </span>
-        <span className="text-white font-bold tracking-tight flex gap-4"> 
-            <span> Privacy Policy </span>
-            <span> Terms of Service </span> 
-        </span>
+      </div>
     </div>
-  </div>
-    )
-}
+  );
+};
 
 export default Footer;
